@@ -1,0 +1,49 @@
+{
+  "name": "EcoToken",
+  "type": "object",
+  "properties": {
+    "driver_id": {
+      "type": "string",
+      "title": "Driver ID"
+    },
+    "amount": {
+      "type": "number",
+      "title": "Amount"
+    },
+    "type": {
+      "type": "string",
+      "title": "Transaction Type",
+      "enum": [
+        "earned",
+        "redeemed"
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "title": "Reason",
+      "enum": [
+        "green_route",
+        "electric_mode",
+        "off_peak_driving",
+        "charging_discount",
+        "parking_discount",
+        "tax_credit",
+        "referral_bonus"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "zone_name": {
+      "type": "string",
+      "title": "Zone Name"
+    }
+  },
+  "required": [
+    "driver_id",
+    "amount",
+    "type",
+    "reason"
+  ]
+}

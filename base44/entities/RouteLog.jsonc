@@ -1,0 +1,66 @@
+{
+  "name": "RouteLog",
+  "type": "object",
+  "properties": {
+    "driver_id": {
+      "type": "string",
+      "title": "Driver ID"
+    },
+    "origin": {
+      "type": "string",
+      "title": "Origin"
+    },
+    "destination": {
+      "type": "string",
+      "title": "Destination"
+    },
+    "route_type": {
+      "type": "string",
+      "title": "Route Type",
+      "enum": [
+        "green_path",
+        "electric_mode",
+        "standard"
+      ]
+    },
+    "distance_km": {
+      "type": "number",
+      "title": "Distance (km)"
+    },
+    "duration_min": {
+      "type": "number",
+      "title": "Duration (min)"
+    },
+    "co2_saved_kg": {
+      "type": "number",
+      "title": "CO2 Saved (kg)"
+    },
+    "tokens_earned": {
+      "type": "number",
+      "title": "Tokens Earned"
+    },
+    "zones_avoided": {
+      "type": "array",
+      "title": "Zones Avoided",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "active",
+        "completed",
+        "cancelled"
+      ],
+      "default": "active"
+    }
+  },
+  "required": [
+    "driver_id",
+    "origin",
+    "destination",
+    "route_type"
+  ]
+}

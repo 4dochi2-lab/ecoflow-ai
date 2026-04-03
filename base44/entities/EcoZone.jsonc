@@ -1,0 +1,65 @@
+{
+  "name": "EcoZone",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Zone Name"
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "green",
+        "yellow",
+        "red"
+      ],
+      "default": "green"
+    },
+    "lat": {
+      "type": "number",
+      "title": "Latitude"
+    },
+    "lng": {
+      "type": "number",
+      "title": "Longitude"
+    },
+    "radius_m": {
+      "type": "number",
+      "title": "Radius (meters)",
+      "default": 500
+    },
+    "co2_level": {
+      "type": "number",
+      "title": "CO2 Level (ppm)"
+    },
+    "pm25_level": {
+      "type": "number",
+      "title": "PM2.5 Level (\u00b5g/m\u00b3)"
+    },
+    "traffic_density": {
+      "type": "number",
+      "title": "Traffic Density (%)",
+      "default": 0
+    },
+    "avg_speed_kmh": {
+      "type": "number",
+      "title": "Average Speed (km/h)"
+    },
+    "active_vehicles": {
+      "type": "number",
+      "title": "Active Vehicles",
+      "default": 0
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    }
+  },
+  "required": [
+    "name",
+    "status",
+    "lat",
+    "lng"
+  ]
+}

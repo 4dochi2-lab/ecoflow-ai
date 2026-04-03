@@ -1,0 +1,61 @@
+{
+  "name": "Driver",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "title": "Full Name"
+    },
+    "vehicle_type": {
+      "type": "string",
+      "title": "Vehicle Type",
+      "enum": [
+        "electric",
+        "hybrid",
+        "gasoline"
+      ]
+    },
+    "vehicle_model": {
+      "type": "string",
+      "title": "Vehicle Model"
+    },
+    "eco_score": {
+      "type": "number",
+      "title": "Eco Score",
+      "default": 50
+    },
+    "token_balance": {
+      "type": "number",
+      "title": "Token Balance",
+      "default": 0
+    },
+    "total_tokens_earned": {
+      "type": "number",
+      "title": "Total Tokens Earned",
+      "default": 0
+    },
+    "total_co2_saved_kg": {
+      "type": "number",
+      "title": "Total CO2 Saved (kg)",
+      "default": 0
+    },
+    "green_routes_taken": {
+      "type": "number",
+      "title": "Green Routes Taken",
+      "default": 0
+    },
+    "electric_mode_switches": {
+      "type": "number",
+      "title": "Electric Mode Switches",
+      "default": 0
+    },
+    "avatar_url": {
+      "type": "string",
+      "title": "Avatar URL"
+    }
+  },
+  "required": [
+    "full_name",
+    "vehicle_type"
+  ]
+}
