@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    --background: 220 20% 97%;
+    --foreground: 220 25% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 10%;
+    --primary: 160 84% 39%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 14% 92%;
+    --secondary-foreground: 220 25% 10%;
+    --muted: 220 14% 95%;
+    --muted-foreground: 220 10% 46%;
+    --accent: 174 72% 40%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 90%;
+    --input: 220 13% 90%;
+    --ring: 160 84% 39%;
+    --chart-1: 160 84% 39%;
+    --chart-2: 174 72% 40%;
+    --chart-3: 200 80% 50%;
+    --chart-4: 45 93% 47%;
+    --chart-5: 0 72% 51%;
+    --radius: 0.75rem;
+
+    --eco-green: 160 84% 39%;
+    --eco-teal: 174 72% 40%;
+    --eco-yellow: 45 93% 47%;
+    --eco-red: 0 72% 51%;
+    --eco-blue: 200 80% 50%;
+
+    --sidebar-background: 0 0% 99%;
+    --sidebar-foreground: 220 25% 15%;
+    --sidebar-primary: 160 84% 39%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 160 40% 96%;
+    --sidebar-accent-foreground: 220 25% 15%;
+    --sidebar-border: 220 13% 90%;
+    --sidebar-ring: 160 84% 39%;
+  }
+
+  .dark {
+    --background: 220 25% 6%;
+    --foreground: 220 14% 95%;
+    --card: 220 25% 9%;
+    --card-foreground: 220 14% 95%;
+    --popover: 220 25% 9%;
+    --popover-foreground: 220 14% 95%;
+    --primary: 160 84% 39%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 20% 14%;
+    --secondary-foreground: 220 14% 95%;
+    --muted: 220 20% 14%;
+    --muted-foreground: 220 10% 55%;
+    --accent: 174 72% 40%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 20% 16%;
+    --input: 220 20% 16%;
+    --ring: 160 84% 39%;
+    --chart-1: 160 84% 39%;
+    --chart-2: 174 72% 40%;
+    --chart-3: 200 80% 50%;
+    --chart-4: 45 93% 47%;
+    --chart-5: 0 72% 51%;
+
+    --sidebar-background: 220 25% 5%;
+    --sidebar-foreground: 220 14% 80%;
+    --sidebar-primary: 160 84% 39%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 10%;
+    --sidebar-accent-foreground: 220 14% 90%;
+    --sidebar-border: 220 20% 12%;
+    --sidebar-ring: 160 84% 39%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
